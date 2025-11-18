@@ -23,10 +23,8 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {/* Navbar */}
         <Navber />
 
-        {/* Page Content */}
         <main>{children}</main>
       </body>
     </html>
