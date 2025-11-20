@@ -88,15 +88,15 @@ export default function Navber() {
                 {[
                   "How it works",
                   "Testimonial",
-                  "Career",
-                  "Terms & Condition",
-                  "Pricing",
-                  "Pricing-2",
-                  "Privacy Policy",
-                  "FAQ",
-                  "Changelog",
-                  "Elements",
-                  "404",
+                  // "Career",
+                  // "Terms & Condition",
+                  // "Pricing",
+                  // "Pricing-2",
+                  // "Privacy Policy",
+                  // "FAQ",
+                  // "Changelog",
+                  // "Elements",
+                  // "404",
                 ].map((page) => (
                   <li key={page}>
                     <Link
@@ -112,19 +112,27 @@ export default function Navber() {
 
             {/* Mobile Buttons */}
             <li className="mt-4 inline-block lg:hidden">
-              <button className="border  btn-sm">Sign Up</button>
+              <Link href="/signup">
+                <button className="border  btn-sm">Sign Up</button>
+              </Link>
             </li>
             <li className="mt-4 inline-block lg:hidden">
-              <button className="btn btn-sm">Login</button>
+              <Link href="/signin">
+                <button className="btn btn-sm">Login</button>
+              </Link>
             </li>
           </ul>
 
           {/* Desktop Buttons */}
           <div className="hidden lg:flex items-center space-x-4">
-            <button className="border border-pink-500 hover:bg-pink-500 rounded py-2  px-4 text-gray-800">
-              Sign Up
-            </button>
-            <button className="text-gray-800">Login </button>
+            <Link href="/signup">
+              <button className="border cursor-pointer border-pink-500 hover:bg-pink-500 rounded py-2  px-4 text-gray-800">
+                Sign Up
+              </button>
+            </Link>
+            <Link href="/signin">
+              <button className="text-gray-800 cursor-pointer">Login </button>
+            </Link>
           </div>
         </nav>
       </Container>

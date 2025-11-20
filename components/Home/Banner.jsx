@@ -6,7 +6,7 @@ import Container from "../Container";
 
 export default function Banner() {
   return (
-    <section className="relative bg-[#f8f9fc] py-20 overflow-hidden">
+    <section className="relative bg-gray-200 py-20 overflow-hidden">
       {/* Background Brush SVG */}
       <Container>
         <Image
